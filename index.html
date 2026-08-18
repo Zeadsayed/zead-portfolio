@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zead Sayed Ahmed — Front-End Developer, Angular</title>
+<meta name="description" content="Zead Sayed Ahmed — Front-End Developer specializing in Angular. Clean architecture, RxJS, and scalable component systems.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- corner crosshairs, fixed to viewport -->
+<div class="crosshair crosshair--tl" aria-hidden="true"></div>
+<div class="crosshair crosshair--tr" aria-hidden="true"></div>
+<div class="crosshair crosshair--bl" aria-hidden="true"></div>
+<div class="crosshair crosshair--br" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header__inner">
+    <a href="#top" class="brand">
+      <span class="brand__mark">ZS</span>
+      <span class="brand__meta">SHEET&nbsp;01<span class="brand__meta-dim">/06</span></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#profile"><span class="nav__num">01</span>Profile</a>
+      <a href="#experience"><span class="nav__num">02</span>Experience</a>
+      <a href="#projects"><span class="nav__num">03</span>Projects</a>
+      <a href="#skills"><span class="nav__num">04</span>Skills</a>
+      <a href="#contact"><span class="nav__num">05</span>Contact</a>
+    </nav>
+
+    <a class="btn btn--ghost header__cta" href="#contact">
+      <span>Get in touch</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#profile">01 — Profile</a>
+    <a href="#experience">02 — Experience</a>
+    <a href="#projects">03 — Projects</a>
+    <a href="#skills">04 — Skills</a>
+    <a href="#contact">05 — Contact</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow"><span class="eyebrow__dot"></span>AVAILABLE FOR FRONT-END ROLES — CAIRO / REMOTE</p>
+        <h1 class="hero__title">
+          Zead&nbsp;Sayed<br>Ahmed
+        </h1>
+        <p class="hero__role">Front&#8209;End Developer <span class="hero__role-sep">·</span> Angular Specialist</p>
+        <p class="hero__desc">
+          I build interfaces the way an engineer reads a blueprint — measured, modular, and made to hold up under change. Two-plus years shipping enterprise CRM/ERP features, reactive state with RxJS, and component systems built on clean architecture.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">
+            <span>View projects</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="mailto:zeadsayed5@gmail.com" class="btn btn--outline">
+            <span>zeadsayed5@gmail.com</span>
+          </a>
+        </div>
+        <dl class="hero__stats">
+          <div class="hero__stat">
+            <dt>Experience</dt>
+            <dd>2+ yrs</dd>
+          </div>
+          <div class="hero__stat">
+            <dt>Core stack</dt>
+            <dd>Angular · TS · RxJS</dd>
+          </div>
+          <div class="hero__stat">
+            <dt>Based in</dt>
+            <dd>Cairo, EG</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero__figure" aria-hidden="true">
+        <div class="schematic" id="schematic">
+          <svg class="schematic__svg" viewBox="0 0 520 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- outer frame: browser chrome -->
+            <g class="s-layer" data-depth="6">
+              <rect x="40" y="40" width="440" height="330" rx="6" class="s-frame"/>
+              <line x1="40" y1="76" x2="480" y2="76" class="s-line"/>
+              <circle cx="60" cy="58" r="4" class="s-dot"/>
+              <circle cx="76" cy="58" r="4" class="s-dot"/>
+              <circle cx="92" cy="58" r="4" class="s-dot"/>
+              <rect x="130" y="50" width="270" height="16" rx="8" class="s-ghost"/>
+            </g>
+
+            <!-- nav block -->
+            <g class="s-layer" data-depth="3">
+              <rect x="58" y="92" width="404" height="34" rx="4" class="s-ghost s-ghost--dim"/>
+            </g>
+
+            <!-- hero block inside browser -->
+            <g class="s-layer" data-depth="4">
+              <rect x="58" y="142" width="230" height="14" rx="3" class="s-ghost"/>
+              <rect x="58" y="164" width="170" height="14" rx="3" class="s-ghost"/>
+              <rect x="58" y="196" width="120" height="34" rx="6" class="s-cta"/>
+            </g>
+
+            <!-- card grid -->
+            <g class="s-layer" data-depth="5">
+              <rect x="58" y="256" width="110" height="94" rx="6" class="s-card"/>
+              <rect x="182" y="256" width="110" height="94" rx="6" class="s-card"/>
+              <rect x="306" y="256" width="110" height="94" rx="6" class="s-card s-card--accent"/>
+            </g>
+
+            <!-- dimension lines -->
+            <g class="s-dim">
+              <line x1="40" y1="392" x2="480" y2="392" class="s-dim-line"/>
+              <line x1="40" y1="386" x2="40" y2="398" class="s-dim-line"/>
+              <line x1="480" y1="386" x2="480" y2="398" class="s-dim-line"/>
+              <text x="255" y="410" class="s-label" text-anchor="middle">440</text>
+
+              <line x1="20" y1="40" x2="20" y2="370" class="s-dim-line"/>
+              <line x1="14" y1="40" x2="26" y2="40" class="s-dim-line"/>
+              <line x1="14" y1="370" x2="26" y2="370" class="s-dim-line"/>
+              <text x="20" y="205" class="s-label s-label--rot" text-anchor="middle" transform="rotate(-90 20 205)">330</text>
+            </g>
+
+            <!-- annotation callouts -->
+            <g class="s-callout">
+              <line x1="416" y1="303" x2="470" y2="303" class="s-callout-line"/>
+              <circle cx="416" cy="303" r="3" class="s-callout-dot"/>
+              <text x="475" y="299" class="s-label s-label--mono">component</text>
+              <text x="475" y="313" class="s-label s-label--mono s-label--dim">reusable · typed</text>
+            </g>
+
+            <g class="s-callout">
+              <line x1="178" y1="213" x2="120" y2="450" class="s-callout-line"/>
+              <circle cx="178" cy="213" r="3" class="s-callout-dot"/>
+              <text x="80" y="465" class="s-label s-label--mono" text-anchor="middle">state: RxJS</text>
+              <text x="80" y="479" class="s-label s-label--mono s-label--dim" text-anchor="middle">observable stream</text>
+            </g>
+
+            <!-- coordinate tag -->
+            <g class="s-tag">
+              <rect x="330" y="480" width="150" height="46" rx="4" class="s-tag-box"/>
+              <text x="345" y="499" class="s-label s-label--mono s-label--amber">CLEAN-ARCH.TS</text>
+              <text x="345" y="514" class="s-label s-label--mono s-label--dim">rev 02 · verified</text>
+            </g>
+
+            <!-- crosshair -->
+            <g class="s-cross">
+              <line x1="40" y1="40" x2="52" y2="40" class="s-line"/>
+              <line x1="40" y1="40" x2="40" y2="52" class="s-line"/>
+              <line x1="480" y1="370" x2="468" y2="370" class="s-line"/>
+              <line x1="480" y1="370" x2="480" y2="358" class="s-line"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <span></span>
+      <p>scroll</p>
+    </div>
+  </section>
+
+  <!-- ============ PROFILE ============ -->
+  <section class="section" id="profile">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="section__num">01</p>
+        <h2 class="section__title">Profile</h2>
+      </div>
+      <div class="profile__grid">
+        <p class="profile__text">
+          Results-driven front-end developer specializing in Angular, focused on building responsive, high-performance interfaces with modern JavaScript tooling. I favor clean architecture and established design patterns over quick fixes — that means components that are easy to test, easy to hand off, and easy to extend six months later. Recent work spans refactoring legacy code, shipping new features inside live enterprise systems, and collaborating directly with clients to turn requirements into working software.
+        </p>
+        <div class="profile__facts">
+          <div class="fact">
+            <span class="fact__label">Location</span>
+            <span class="fact__value">Cairo, Egypt</span>
+          </div>
+          <div class="fact">
+            <span class="fact__label">Focus</span>
+            <span class="fact__value">Angular · RxJS · Clean Architecture</span>
+          </div>
+          <div class="fact">
+            <span class="fact__label">Education</span>
+            <span class="fact__value">Computers &amp; AI, Benha University</span>
+          </div>
+          <div class="fact">
+            <span class="fact__label">Languages</span>
+            <span class="fact__value">Arabic (native) · English</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="section__num">02</p>
+        <h2 class="section__title">Experience</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__item">
+          <div class="timeline__marker"><span>01</span></div>
+          <div class="timeline__content">
+            <div class="timeline__top">
+              <h3>Front End Developer</h3>
+              <span class="timeline__badge">Current</span>
+            </div>
+            <p class="timeline__org">Oasis Computer Systems <span class="dot">·</span> Nasr City, Egypt</p>
+            <p class="timeline__date">September 2023 — Present</p>
+            <ul class="timeline__list">
+              <li>Designed and implemented new features for live enterprise CRM and ERP systems.</li>
+              <li>Integrated RESTful APIs to connect frontend applications with backend services for real-time data sync.</li>
+              <li>Worked directly with clients to translate requirements into technical solutions.</li>
+              <li>Built modular, reusable UI components with Bootstrap and custom CSS.</li>
+              <li>Applied clean architecture and design patterns for scalable, maintainable code.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__marker"><span>02</span></div>
+          <div class="timeline__content">
+            <div class="timeline__top">
+              <h3>Front End Developer</h3>
+            </div>
+            <p class="timeline__org">Global Transport Services <span class="dot">·</span> Germany (Remote)</p>
+            <p class="timeline__date">July 2023 — September 2023</p>
+            <ul class="timeline__list">
+              <li>Developed and integrated a secure payment gateway for a logistics platform using Angular.</li>
+              <li>Implemented responsive design across desktop, tablet, and mobile.</li>
+              <li>Collaborated with a distributed team across time zones, maintaining a 100% sprint completion rate.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline__item timeline__item--edu">
+          <div class="timeline__marker"><span>—</span></div>
+          <div class="timeline__content">
+            <div class="timeline__top">
+              <h3>B.Sc., Computers &amp; Artificial Intelligence</h3>
+            </div>
+            <p class="timeline__org">Benha University</p>
+            <p class="timeline__date">2018 — 2022</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="section__num">03</p>
+        <h2 class="section__title">Projects</h2>
+      </div>
+
+      <div class="projects__grid">
+
+        <article class="pcard pcard--wide">
+          <div class="pcard__head">
+            <span class="pcard__tag">&lt;OnlineExam /&gt;</span>
+            <span class="pcard__index">01</span>
+          </div>
+          <h3 class="pcard__title">Online Exam Platform</h3>
+          <p class="pcard__desc">A comprehensive exam platform with a countdown timer and auto-submission, dynamic question loading from a REST API, live score calculation, and a results analytics dashboard.</p>
+          <ul class="pcard__stack">
+            <li>Angular 15</li><li>TypeScript</li><li>RxJS</li><li>Bootstrap</li><li>REST API</li>
+          </ul>
+        </article>
+
+        <article class="pcard">
+          <div class="pcard__head">
+            <span class="pcard__tag">&lt;Ecommerce /&gt;</span>
+            <span class="pcard__index">02</span>
+          </div>
+          <h3 class="pcard__title">E-commerce Website</h3>
+          <p class="pcard__desc">Product catalog with advanced filtering, cart, and checkout. Cart state managed with RxJS observables; product data from the Fake Store API.</p>
+          <ul class="pcard__stack">
+            <li>Angular</li><li>RxJS</li><li>Tailwind</li><li>Local Storage</li>
+          </ul>
+        </article>
+
+        <article class="pcard">
+          <div class="pcard__head">
+            <span class="pcard__tag">&lt;MovieDB /&gt;</span>
+            <span class="pcard__index">03</span>
+          </div>
+          <h3 class="pcard__title">Movie-DB Website</h3>
+          <p class="pcard__desc">Movie discovery app on the TMDb API — advanced search, cast details, a trending carousel, and a local-storage watchlist.</p>
+          <ul class="pcard__stack">
+            <li>Angular</li><li>TMDb API</li><li>Bootstrap</li><li>HTTP Client</li>
+          </ul>
+        </article>
+
+        <article class="pcard">
+          <div class="pcard__head">
+            <span class="pcard__tag">&lt;FoodOrder /&gt;</span>
+            <span class="pcard__index">04</span>
+          </div>
+          <h3 class="pcard__title">Food Ordering Platform</h3>
+          <p class="pcard__desc">Responsive food-ordering flow — menu browsing, cart management, and order processing.</p>
+          <ul class="pcard__stack">
+            <li>Angular</li><li>TypeScript</li><li>Sass</li>
+          </ul>
+        </article>
+
+        <article class="pcard">
+          <div class="pcard__head">
+            <span class="pcard__tag">&lt;SmartLogin /&gt;</span>
+            <span class="pcard__index">05</span>
+          </div>
+          <h3 class="pcard__title">Smart Login</h3>
+          <p class="pcard__desc">A secure sign-up, login, and session-management flow built in vanilla JavaScript with form validation.</p>
+          <ul class="pcard__stack">
+            <li>JavaScript (ES6+)</li><li>Local Storage</li><li>DOM API</li>
+          </ul>
+        </article>
+
+        <article class="pcard">
+          <div class="pcard__head">
+            <span class="pcard__tag">&lt;Bookmarker /&gt;</span>
+            <span class="pcard__index">06</span>
+          </div>
+          <h3 class="pcard__title">Bookmarker</h3>
+          <p class="pcard__desc">A lightweight tool that tracks a user's reading or browsing progress on any website.</p>
+          <ul class="pcard__stack">
+            <li>JavaScript</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="section__num">04</p>
+        <h2 class="section__title">Skills</h2>
+      </div>
+
+      <div class="stack-diagram">
+
+        <div class="stack-layer">
+          <div class="stack-layer__label">
+            <span class="stack-layer__name">Core</span>
+            <span class="stack-layer__hint">languages</span>
+          </div>
+          <ul class="chip-row">
+            <li>HTML</li><li>CSS</li><li>Sass</li><li>JavaScript (ES6)</li><li>TypeScript</li>
+          </ul>
+        </div>
+
+        <div class="stack-layer">
+          <div class="stack-layer__label">
+            <span class="stack-layer__name">Frameworks</span>
+            <span class="stack-layer__hint">&amp; libraries</span>
+          </div>
+          <ul class="chip-row">
+            <li>Angular</li><li>RxJS</li><li>RESTful APIs</li><li>PWA</li>
+          </ul>
+        </div>
+
+        <div class="stack-layer">
+          <div class="stack-layer__label">
+            <span class="stack-layer__name">Styling</span>
+            <span class="stack-layer__hint">UI systems</span>
+          </div>
+          <ul class="chip-row">
+            <li>Bootstrap</li><li>Tailwind</li><li>Responsive Design</li>
+          </ul>
+        </div>
+
+        <div class="stack-layer">
+          <div class="stack-layer__label">
+            <span class="stack-layer__name">Practice</span>
+            <span class="stack-layer__hint">engineering</span>
+          </div>
+          <ul class="chip-row">
+            <li>OOP</li><li>Clean Architecture</li><li>Design Patterns</li><li>Unit Testing</li><li>Code Refactoring</li><li>Git &amp; GitHub</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="certs">
+        <p class="certs__label">Certificates</p>
+        <ul class="certs__list">
+          <li><span>Elevate Campus</span><span class="certs__date">Jan 2025</span></li>
+          <li><span>Route IT Training Center — Front End Diploma</span><span class="certs__date">Mar 2022</span></li>
+          <li><span>Russian Culture Center — Web Design Diploma</span><span class="certs__date">Oct 2020</span></li>
+          <li><span>ITCRC — Web Design Diploma</span><span class="certs__date">Feb 2020</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / TITLE BLOCK ============ -->
+  <section class="section section--contact" id="contact">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="section__num">05</p>
+        <h2 class="section__title">Contact</h2>
+      </div>
+      <p class="contact__intro">Open to front-end and Angular roles — in Cairo or remote. The fastest way to reach me is email.</p>
+
+      <div class="title-block">
+        <div class="title-block__row title-block__row--head">
+          <div class="title-block__cell title-block__cell--name">
+            <span class="tb-label">Name</span>
+            <span class="tb-value">Zead Sayed Ahmed</span>
+          </div>
+          <div class="title-block__cell">
+            <span class="tb-label">Role</span>
+            <span class="tb-value">Front-End Developer, Angular</span>
+          </div>
+          <div class="title-block__cell">
+            <span class="tb-label">Location</span>
+            <span class="tb-value">Cairo, Egypt</span>
+          </div>
+        </div>
+        <div class="title-block__row">
+          <a class="title-block__cell title-block__cell--link" href="mailto:zeadsayed5@gmail.com">
+            <span class="tb-label">Email</span>
+            <span class="tb-value tb-value--accent">zeadsayed5@gmail.com</span>
+          </a>
+          <a class="title-block__cell title-block__cell--link" href="tel:01288952009">
+            <span class="tb-label">Phone</span>
+            <span class="tb-value">01288952009</span>
+          </a>
+          <a class="title-block__cell title-block__cell--link" href="#" data-placeholder-link="github">
+            <span class="tb-label">GitHub</span>
+            <span class="tb-value">github.com/zeadsayed</span>
+          </a>
+          <a class="title-block__cell title-block__cell--link" href="#" data-placeholder-link="linkedin">
+            <span class="tb-label">LinkedIn</span>
+            <span class="tb-value">in/zeadsayed</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <p>© <span id="year"></span> Zead Sayed Ahmed. Built with plain HTML, CSS &amp; JS.</p>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
